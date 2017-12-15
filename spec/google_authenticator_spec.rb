@@ -6,12 +6,12 @@ describe GoogleAuthenticatorRails do
 
     context 'counter = 1' do
       let(:counter) { 1 }
-      it { should == 868864 }
+      it { should == "868864" }
     end
 
     context 'counter = 2' do
       let(:counter) { 2 }
-      it { should == 304404 }
+      it { should == "304404" }
     end
   end
 
@@ -19,7 +19,7 @@ describe GoogleAuthenticatorRails do
     let(:secret)         { '5qlcip7azyjuwm36' }
     let(:original_time)  { Time.parse("2012-08-07 11:11:00 AM +0700") }
     let!(:time)          { original_time }
-    let(:code)           { 495502 }
+    let(:code)           { "495502" }
 
     before do
       Time.stub!(:now).and_return(time)
